@@ -124,7 +124,8 @@ function App() {
               <button onClick={() => scrollToSection(7)} className="nav-link">
                 Contact
               </button>
-              <button className="login-btn">Login</button>
+              <button className="login-btn" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+>Login</button>
             </div>
 
             <div className="mobile-menu-btn">
@@ -161,7 +162,7 @@ function App() {
                 <button onClick={() => scrollToSection(7)} className="mobile-nav-link">
                   Contact
                 </button>
-                <button className="mobile-login-btn">Login</button>
+                <button className="mobile-login-btn" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}>Login</button>
               </div>
             </div>
           )}
@@ -182,7 +183,7 @@ function App() {
                 Get Started
                 <ArrowRight className="btn-icon" />
               </button>
-              <button className="btn-secondary">Log In</button>
+              <button className="btn-secondary" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}>Log In</button>
             </div>
           </div>
         </div>
@@ -247,7 +248,7 @@ function App() {
               </p>
               <div className="target-buttons">
                 <button className="btn-primary-full">Read More</button>
-                <button className="btn-outline-full">Login</button>
+                <button className="btn-outline-full" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}>Login</button>
               </div>
             </div>
 
@@ -256,13 +257,13 @@ function App() {
               <div className="target-icon secondary">
                 <Building2 className="icon" />
               </div>
-              <h3 className="target-title">Employers</h3>
+              <h3 className="target-title">Coordinators</h3>
               <p className="target-description">
-                Looking to host UniPort SIWES students? Connect with talented future professionals.
+                 Manage and oversee SIWES student activities with ease. Access tools to approve placements, assign supervisors, and track student progress.
               </p>
               <div className="target-buttons">
                 <button className="btn-primary-full">Read More</button>
-                <button className="btn-outline-full">Login</button>
+                <button className="btn-outline-full" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/coordinators"}>Login</button>
               </div>
             </div>
 
@@ -277,7 +278,7 @@ function App() {
               </p>
               <div className="target-buttons">
                 <button className="btn-primary-full">Read More</button>
-                <button className="btn-outline-full">Login</button>
+                <button className="btn-outline-full" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/admin"}>Login</button>
               </div>
             </div>
           </div>
