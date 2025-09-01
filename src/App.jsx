@@ -95,7 +95,7 @@ function App() {
         <div className="nav-container">
           <div className="nav-content">
             <div className="nav-brand">
-              <img src="/src/assets/logo.png" alt="UniPort Logo" className="brand-logo" />
+              <img src="/logo.png" alt="UniPort Logo" className="brand-logo" />
               <span className="brand-text">SIWES UniPort</span>
             </div>
 
@@ -193,7 +193,7 @@ function App() {
         <div className="container">
           <div className="director-content">
             <div className="director-image">
-              <img src="/src/assets/SIWES_director.jpg" alt="Director" className="director-photo" />
+              <img src="/SIWES_director.jpg" alt="Director" className="director-photo" />
             </div>
             <div className="director-message">
               <div className="section-header">
@@ -711,7 +711,7 @@ function App() {
             <div className="footer-brand">
               <div className="footer-logo">
                 {/* <GraduationCap className="brand-icon" /> */}
-                <img src="/src/assets/logo.png" alt="UniPort Logo" className="brand-logo" />
+                <img src="/logo.png" alt="UniPort Logo" className="brand-logo" />
                 <span className="brand-text">SIWES UniPort</span>
               </div>
               <p className="footer-desc">
