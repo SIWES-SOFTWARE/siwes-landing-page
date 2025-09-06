@@ -538,6 +538,38 @@ body {
   }
 }
 
+/* Target Groups - Carousel */
+.target-groups-carousel {
+  display: flex;
+  gap: 2rem; /* spacing between cards */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.target-groups-carousel::-webkit-scrollbar {
+  display: none; /* hide scrollbar for cleaner look */
+}
+
+.target-card {
+  flex: 0 0 300px; /* fixed card width for consistency */
+  scroll-snap-align: center;
+  background-color: var(--card);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+
+.target-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+
 .target-card {
   background-color: var(--card);
   border-radius: 1rem;

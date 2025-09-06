@@ -124,7 +124,9 @@ function App() {
               <button onClick={() => scrollToSection(7)} className="nav-link">
                 Contact
               </button>
-              <button className="login-btn" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+              <button className="login-btn" 
+              onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+              // onClick={() => window.location.href = "https://siwes-student.vercel.app/"}
 >Login</button>
             </div>
 
@@ -162,7 +164,11 @@ function App() {
                 <button onClick={() => scrollToSection(7)} className="mobile-nav-link">
                   Contact
                 </button>
-                <button className="mobile-login-btn" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}>Login</button>
+                <button className="mobile-login-btn" 
+                onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+              // onClick={() => window.location.href = "https://siwes-student.vercel.app/"}
+
+                >Login</button>
               </div>
             </div>
           )}
@@ -183,7 +189,11 @@ function App() {
                 Get Started
                 <ArrowRight className="btn-icon" />
               </button>
-              <button className="btn-secondary" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}>Log In</button>
+              <button className="btn-secondary" 
+              onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+              // onClick={() => window.location.href = "https://siwes-student.vercel.app/"}
+
+              >Log In</button>
             </div>
           </div>
         </div>
@@ -225,7 +235,7 @@ function App() {
         </div>
       </section>
 
-      {/* Target Groups */}
+      {/* Target Groups
       <section ref={addToRefs} className="section">
         <div className="container">
           <div className="section-header">
@@ -237,7 +247,7 @@ function App() {
             </p>
           </div>
           <div className="target-groups-grid">
-            {/* Students */}
+          
             <div className="target-card">
               <div className="target-icon primary">
                 <GraduationCap className="icon" />
@@ -248,11 +258,15 @@ function App() {
               </p>
               <div className="target-buttons">
                 <button className="btn-primary-full">Read More</button>
-                <button className="btn-outline-full" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}>Login</button>
+                <button className="btn-outline-full" 
+                // onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+              onClick={() => window.location.href = "https://siwes-student.vercel.app/"}
+
+                >Login</button>
               </div>
             </div>
 
-            {/* Employers */}
+            
             <div className="target-card">
               <div className="target-icon secondary">
                 <Building2 className="icon" />
@@ -263,11 +277,36 @@ function App() {
               </p>
               <div className="target-buttons">
                 <button className="btn-primary-full">Read More</button>
-                <button className="btn-outline-full" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/coordinators"}>Login</button>
+                <button className="btn-outline-full" 
+                // onClick={() => window.location.href = "https://siwes.uniport.edu.ng/coordinators"}
+              onClick={() => window.location.href = "https://siwes-coordinator.vercel.app/"}
+
+                >Login</button>
               </div>
             </div>
 
-            {/* Institution Admin */}
+           
+<div className="target-card">
+  <div className="target-icon accent">
+    <Users className="icon" />
+  </div>
+  <h3 className="target-title">SIWES Supervisors</h3>
+  <p className="target-description">
+    Oversee assigned students during their SIWES program. Monitor performance, provide guidance, and submit evaluation reports seamlessly.
+  </p>
+  <div className="target-buttons">
+    <button className="btn-primary-full">Read More</button>
+    <button
+      className="btn-outline-full"
+      onClick={() => window.location.href = "https://siwes-supervisor.vercel.app/"}
+    >
+      Login
+    </button>
+  </div>
+</div>
+
+
+            
             <div className="target-card">
               <div className="target-icon accent">
                 <Users className="icon" />
@@ -278,12 +317,127 @@ function App() {
               </p>
               <div className="target-buttons">
                 <button className="btn-primary-full">Read More</button>
-                <button className="btn-outline-full" onClick={() => window.location.href = "https://siwes.uniport.edu.ng/admin"}>Login</button>
+                <button className="btn-outline-full" 
+                // onClick={() => window.location.href = "https://siwes.uniport.edu.ng/admin"}
+              onClick={() => window.location.href = "https://siwes-admin.vercel.app/"}
+
+                >Login</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+    {/* Target Groups */}
+<section ref={addToRefs} className="section">
+  <div className="container">
+    <div className="section-header">
+      <div className="section-title-wrapper">
+        <h2 className="section-title">Who We Serve</h2>
+      </div>
+      <p className="section-subtitle">
+        Connecting students, employers, and institutions for successful SIWES placements
+      </p>
+    </div>
+
+    {/* Carousel container */}
+    <div className="overflow-x-auto">
+      <div className="flex gap-6 pb-4 snap-x snap-mandatory">
+        
+        {/* Students */}
+        <div className="target-card flex-shrink-0 w-80 snap-center">
+          <div className="target-icon primary">
+            <GraduationCap className="icon" />
+          </div>
+          <h3 className="target-title">Students (UniPort)</h3>
+          <p className="target-description">
+            Already placed? Register with your SCAF details and access exclusive resources.
+          </p>
+          <div className="target-buttons">
+            <button className="btn-primary-full">Read More</button>
+            <button
+              className="btn-outline-full"
+              // onClick={() => window.open("https://siwes-student.vercel.app/", "_blank")}
+                onClick={() => window.location.href = "https://siwes.uniport.edu.ng/student"}
+
+
+            >
+              Login
+            </button>
+          </div>
+        </div>
+
+        {/* Coordinators */}
+        <div className="target-card flex-shrink-0 w-80 snap-center">
+          <div className="target-icon secondary">
+            <Building2 className="icon" />
+          </div>
+          <h3 className="target-title">Coordinators</h3>
+          <p className="target-description">
+            Manage and oversee SIWES student activities with ease. Access tools to approve placements, assign supervisors, and track student progress.
+          </p>
+          <div className="target-buttons">
+            <button className="btn-primary-full">Read More</button>
+            <button
+              className="btn-outline-full"
+              // onClick={() => window.open("https://siwes-coordinator.vercel.app/", "_blank")}
+                onClick={() => window.location.href = "https://siwes.uniport.edu.ng/coordinator"}
+
+            >
+              Login
+            </button>
+          </div>
+        </div>
+
+        {/* Supervisors */}
+        <div className="target-card flex-shrink-0 w-80 snap-center">
+          <div className="target-icon accent">
+            <Users className="icon" />
+          </div>
+          <h3 className="target-title">SIWES Supervisors</h3>
+          <p className="target-description">
+            Oversee assigned students during their SIWES program. Monitor performance, provide guidance, and submit evaluation reports seamlessly.
+          </p>
+          <div className="target-buttons">
+            <button className="btn-primary-full">Read More</button>
+            <button
+              className="btn-outline-full"
+              // onClick={() => window.open("https://siwes-supervisor.vercel.app/", "_blank")}
+                onClick={() => window.location.href = "https://siwes.uniport.edu.ng/supervisor"}
+
+            >
+              Login
+            </button>
+          </div>
+        </div>
+
+        {/* Institution Admin */}
+        <div className="target-card flex-shrink-0 w-80 snap-center">
+          <div className="target-icon accent">
+            <Users className="icon" />
+          </div>
+          <h3 className="target-title">Institution Admin</h3>
+          <p className="target-description">
+            Manage institutional SIWES operations, monitor placements, and generate insightful reports.
+          </p>
+          <div className="target-buttons">
+            <button className="btn-primary-full">Read More</button>
+            <button
+              className="btn-outline-full"
+              // onClick={() => window.open("https://siwes-admin.vercel.app/", "_blank")}
+                onClick={() => window.location.href = "https://siwes.uniport.edu.ng/admin"}
+
+            >
+              Login
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Instructions Section for Students and Companies */}
       <section ref={addToRefs} className="section alt-bg instructions-section">
