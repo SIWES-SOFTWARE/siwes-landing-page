@@ -32,33 +32,33 @@ function App() {
   const isScrollingRef = useRef(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  useEffect(() => {
-    const handleWheel = (e) => {
-      if (isScrollingRef.current) return
+  // useEffect(() => {
+  //   const handleWheel = (e) => {
+  //     if (isScrollingRef.current) return
 
-      e.preventDefault()
+  //     e.preventDefault()
 
-      const direction = e.deltaY > 0 ? 1 : -1
-      const nextSection = currentSectionRef.current + direction
+  //     const direction = e.deltaY > 0 ? 1 : -1
+  //     const nextSection = currentSectionRef.current + direction
 
-      if (nextSection >= 0 && nextSection < sectionsRef.current.length) {
-        isScrollingRef.current = true
-        currentSectionRef.current = nextSection
+  //     if (nextSection >= 0 && nextSection < sectionsRef.current.length) {
+  //       isScrollingRef.current = true
+  //       currentSectionRef.current = nextSection
 
-        sectionsRef.current[nextSection]?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        })
+  //       sectionsRef.current[nextSection]?.scrollIntoView({
+  //         behavior: "smooth",
+  //         block: "start",
+  //       })
 
-        setTimeout(() => {
-          isScrollingRef.current = false
-        }, 1000)
-      }
-    }
+  //       setTimeout(() => {
+  //         isScrollingRef.current = false
+  //       }, 1000)
+  //     }
+  //   }
 
-    window.addEventListener("wheel", handleWheel, { passive: false })
-    return () => window.removeEventListener("wheel", handleWheel)
-  }, [])
+  //   window.addEventListener("wheel", handleWheel, { passive: false })
+  //   return () => window.removeEventListener("wheel", handleWheel)
+  // }, [])
 
   const addToRefs = (el) => {
     if (el && !sectionsRef.current.includes(el)) {
