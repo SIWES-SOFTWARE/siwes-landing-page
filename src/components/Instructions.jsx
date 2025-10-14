@@ -3,11 +3,11 @@ import { GraduationCap, Building2 } from "lucide-react"
 
 export default function Instructions() {
     const studentSteps = [
-        { num: 1, title: "Register Your Account", desc: "Create your account using your academic details" },
-        { num: 2, title: "Fill the Master List Form", desc: "Add your academic information, skills, and preferences" },
-        { num: 2, title: "Download IT Letter", desc: "Add your academic information, skills, and preferences" },
-        { num: 3, title: "Find a Placement/Company", desc: "Search and apply for SIWES placements that match your field" },
-        { num: 4, title: "Fill the Placement List Form", desc: "Monitor application status and communicate with employers" },
+        { num: 1, title: "Register Your Account", desc: "Set up your profile with your student ID and academic credentials" },
+        { num: 2, title: "Complete the Master List Form", desc: "Enter your educational background, skills, and placement preferences" },
+        { num: 3, title: "Download Your IT Letter", desc: "Generate and retrieve your official Industrial Training letter" },
+        { num: 4, title: "Search for Placements", desc: "Explore and apply to suitable SIWES opportunities in your discipline" },
+        { num: 5, title: "Submit the Placement List Form", desc: "Track your application progress and liaise with potential employers" },
     ]
 
     // const employerSteps = [
@@ -37,7 +37,7 @@ export default function Instructions() {
                             </div>
                         </div>
                         <div className="space-y-4">
-                            {studentSteps.map((step,idx) => (
+                            {studentSteps.map((step, idx) => (
                                 <div key={step.num} className="flex items-start space-x-4">
                                     <div className="w-8 h-8 bg-accent-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
                                         {idx + 1}
