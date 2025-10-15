@@ -57,6 +57,7 @@ export default function WhoWeServe() {
                                 </section>
 
                                 <a
+                                    target="_blank"
                                     href={target.href}
                                     className="w-full py-2 px-4 border bg-accent-500 text-white border-gray-300 rounded-lg hover:bg-accent-500/90 transition-colors block text-center"
                                 >
