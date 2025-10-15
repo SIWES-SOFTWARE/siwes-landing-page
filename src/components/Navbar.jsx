@@ -94,6 +94,7 @@ export default function Navbar({ isMobileMenuOpen, setIsMobileMenuOpen }) {
                         </div>
                         <a
                             href="https://siwes.uniport.edu.ng/student"
+                            target="_blank"
                             className="px-4 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-500/90 transition-colors font-medium"
                         >
                             Login
@@ -125,6 +126,7 @@ export default function Navbar({ isMobileMenuOpen, setIsMobileMenuOpen }) {
 
                         <div className="px-4">
                             <a
+                                target="_blank"
                                 href="https://siwes.uniport.edu.ng/student"
                                 onClick={handleMobileLinkClick}
                                 className="block w-full px-4 py-2  bg-accent-500 text-white rounded-lg hover:bg-accent-500/90 text-center font-medium"

@@ -18,6 +18,7 @@ export default function Hero() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a
+                            target="_blank"
                             href="https://siwes.uniport.edu.ng/student"
                             className="group flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-accent-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                         >
