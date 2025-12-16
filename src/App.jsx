@@ -12,6 +12,7 @@ import Partners from "./components/Partners"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import ScrollToTop from "./components/ScrollToTop"
+import VCMessage from "./components/VCMessage"
 
 function App() {
   const sectionsRef = useRef([])
@@ -45,6 +46,9 @@ function App() {
         scrollToSection={scrollToSection}
       />
       <Hero scrollToSection={scrollToSection} ref={(el) => addToRefs(el)} />
+
+      <VCMessage ref={(el) => addToRefs(el)} />
+
       <DirectorsMessage ref={(el) => addToRefs(el)} />
       <WhoWeServe ref={(el) => addToRefs(el)} />
       <Instructions ref={(el) => addToRefs(el)} />

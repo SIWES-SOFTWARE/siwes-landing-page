@@ -24,6 +24,7 @@ export default function Navbar({ isMobileMenuOpen, setIsMobileMenuOpen }) {
     ]
 
     const dropdownLinks = [
+        { href: "#vice-chancellor-message", text: "VC's Message" },
         { href: "#directors-message", text: "Director's Message" },
         { href: "#instructions", text: "Instructions" },
         { href: "#quick-actions", text: "Quick Actions" },
